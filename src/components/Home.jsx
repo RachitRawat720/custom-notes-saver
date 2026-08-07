@@ -17,10 +17,17 @@ const Home = () => {
     useEffect(() => {
         if(noteId){
             const note = allNotes.find((p) => p._id === noteId);
-            setTitle(note.title);
-            setValue(note.content);
+            
+            if(note){
+                setTitle(note.title);
+                setValue(note.content);
+            }
         }
-    })
+        else {
+            setTitle("");
+            setValue("");
+        }
+    }, [noteId, allNotes]);
 
     function createNote(){
 
@@ -34,11 +41,13 @@ const Home = () => {
             return;
         }
 
+        const existingNote = allNotes.find((item) => item._id === noteId);
+
         const note = {
             title: title,
             content: value,
             _id: noteId || Date.now().toString(36),
-            createdAt: new Date().toISOString(),
+            createdAt: existingNote?.createdAt || new Date().toISOString(),
         }
 
         if(noteId){

@@ -23,9 +23,7 @@ export const notesSlice = createSlice({
 
             if(index >= 0){
                 state.notes[index] = note;
-
                 localStorage.setItem("notes", JSON.stringify(state.notes));
-
                 toast.success("Note updated!");
             }
         },
