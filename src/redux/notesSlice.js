@@ -19,7 +19,7 @@ export const notesSlice = createSlice({
         },
         updateNote: (state, action) => {
             const note = action.payload;
-            const index = state.pastes.findIndex((item) => item._id === note._id);
+            const index = state.notes.findIndex((item) => item._id === note._id);
 
             if(index >= 0){
                 state.notes[index] = note;
