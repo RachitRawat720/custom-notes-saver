@@ -15,7 +15,7 @@ export const notesSlice = createSlice({
             const note = action.payload;
             state.notes.push(note);
             localStorage.setItem("notes", JSON.stringify(state.notes));
-            toast("Note created successfully!")
+            toast.success("Note created successfully!")
         },
         updateNote: (state, action) => {
             const note = action.payload;

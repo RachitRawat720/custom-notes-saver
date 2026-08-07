@@ -63,7 +63,7 @@ const Notes = () => {
                             <div className="border bg-amber-50 rounded-2xl p-5 flex flex-col" key={notes?._id}>
                                 <div className="text-rose-500 text-[22px] ">{notes.title}</div>
 
-                                <div>{notes.content}</div>
+                                <div className="line-clamp-3 whitespace-pre-wrap">{notes.content}</div>
 
                                 <div className="flex flex-row gap-4 place-content-start mt-4 mb-4 sm:place-content-end sm:m-0">
 
@@ -132,15 +132,34 @@ const Notes = () => {
                                 </div>
 
                             </div>
+
+                            
                         );
                     })) :
                     (
                         <div className="text-gray-700 font-medium text-xl sm:text-3xl md:text-4xl lg:text-5xl lg:mt-5">
-                        "No note present" <div className="text-blue-700 text-[15px] md:text-2xl lg:text-3xl cursor-pointer mt-5 underline"><NavLink to={"/"}>Add Note</NavLink></div>
+                            "No note present" <br /><br />
+                            <div className="bg-amber-600 inline-block text-white rounded-3xl px-2 py-0.5 text-[12px] sm:px-3 sm:py-1 sm:text-[15px] md:py-1 md:px-3 md:text-xl lg:py-2 lg:px-4 lg:text-2xl hover:bg-blue-500"><NavLink to={"/"}>Add Note</NavLink></div>
                         </div>
                     )
                 }
             </div>
+
+            {filteredData.length > 0 && (
+                <div className="flex justify-center mt-8 mb-5">
+                    <button
+                        onClick={() =>
+                            window.scrollTo({
+                                top: 0,
+                                behavior: "smooth",
+                            })
+                        }
+                        className="bg-amber-600 text-white text-[14px] px-2 py-1 md:text-[16px] md:px-3 md:py-2 lg:text-[18px] lg:px-5 lg:py-2 rounded-4xl hover:bg-green-700 transition"
+                    >
+                        ↑ Go to Top
+                    </button>
+                </div>
+            )}
         </div>
     );
 };
