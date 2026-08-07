@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import "tailwindcss";
-import { useNavigate } from 'react-router-dom'
+import { NavLink, useNavigate } from 'react-router-dom'
 
 {/* ============================================================================ */}
 
@@ -47,7 +47,7 @@ const Notes = () => {
     }
 
     return (
-        <div className="p-10 sm:p-20 md:p-30 lg:p-50">
+        <div className="p-10 sm:p-20 sm:pt-10 md:p-30 md:pt-15 lg:p-50 lg:pt-20">
             <input
                 className="p-2 w-full max-w-84 text-[14px] rounded-2xl bg-white text-black pl-6 sm:mt-5 sm:min-w-100 sm:text-[16px] md:min-w-140 md:text-[18px] lg:min-w-150  lg:text-[20px]"
                 type="search"
@@ -57,7 +57,7 @@ const Notes = () => {
             />
 
             <div className="flex flex-col gap-5 mt-10">
-                {filteredData.length > 0 &&
+                {filteredData.length > 0 ? (
                     filteredData.map((notes) => {
                         return (
                             <div className="border bg-amber-50 rounded-2xl p-5 flex flex-col" key={notes?._id}>
@@ -133,7 +133,13 @@ const Notes = () => {
 
                             </div>
                         );
-                    })}
+                    })) :
+                    (
+                        <div className="text-gray-700 font-medium text-xl sm:text-3xl md:text-4xl lg:text-5xl lg:mt-5">
+                        "No note present" <div className="text-blue-700 text-[15px] md:text-2xl lg:text-3xl cursor-pointer mt-5 underline"><NavLink to={"/"}>Add Note</NavLink></div>
+                        </div>
+                    )
+                }
             </div>
         </div>
     );
