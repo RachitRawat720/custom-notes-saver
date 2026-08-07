@@ -1,12 +1,12 @@
 import { useState } from 'react'
 import './App.css'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { createHashRouter, RouterProvider } from 'react-router-dom'
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Notes from './components/Notes';
 import ViewNotes from './components/ViewNotes';
 
-const router = createBrowserRouter(
+const router = createHashRouter(
   [
     {
       path: "/",
