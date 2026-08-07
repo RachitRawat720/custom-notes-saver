@@ -11,43 +11,43 @@ export const notesSlice = createSlice({
     name: 'notes',
     initialState,
     reducers: {
-    addToNotes: (state, action) => {
-        const note = action.payload;
-        state.notes.push(note);
-        localStorage.setItem("notes", JSON.stringify(state.notes));
-        toast("Note created successfully!")
-    },
-    updateNote: (state, action) => {
-        const note = action.payload;
-        const index = state.pastes.findIndex((item) => item._id === note._id);
-
-        if(index >= 0){
-            state.notes[index] = note;
-
+        addToNotes: (state, action) => {
+            const note = action.payload;
+            state.notes.push(note);
             localStorage.setItem("notes", JSON.stringify(state.notes));
+            toast("Note created successfully!")
+        },
+        updateNote: (state, action) => {
+            const note = action.payload;
+            const index = state.pastes.findIndex((item) => item._id === note._id);
 
-            toast.success("Note updated!");
-        }
-    },
-    resetAllNotes: (state, action) => {
-        state.notes = [];
-        localStorage.removeItem("notes");
-    },
-    removeFromNotes: (state, action) => {
-        const noteId = action.payload;
+            if(index >= 0){
+                state.notes[index] = note;
 
-        console.log(noteId);
-        const index = state.notes.findIndex((item) => item._id === noteId);
+                localStorage.setItem("notes", JSON.stringify(state.notes));
 
-        if(index >= 0){
-            state.notes.splice(index, 1);
+                toast.success("Note updated!");
+            }
+        },
+        resetAllNotes: (state, action) => {
+            state.notes = [];
+            localStorage.removeItem("notes");
+        },
+        removeFromNotes: (state, action) => {
+            const noteId = action.payload;
 
-            localStorage.setItem("notes", JSON.stringify(state.notes));
-            toast.success("Note deleted");
-        }
+            console.log(noteId);
+            const index = state.notes.findIndex((item) => item._id === noteId);
 
-    },
-}
+            if(index >= 0){
+                state.notes.splice(index, 1);
+
+                localStorage.setItem("notes", JSON.stringify(state.notes));
+                toast.success("Note deleted");
+            }
+
+        },
+    }
 })
 
 export const { addToNotes, updateNote, resetAllNotes, removeFromNotes} = notesSlice.actions
