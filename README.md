@@ -101,7 +101,7 @@ Separate Home and Notes sections make it easy to navigate through the applicatio
 
 The Home page provides a simple interface for creating a new note by entering a title and note content.
 
-![Home Page](./screenshots/home.png)
+![Home Page](./screenshots/home-page.png)
 
 ---
 
@@ -109,7 +109,7 @@ The Home page provides a simple interface for creating a new note by entering a 
 
 The Notes page displays all saved notes along with their creation dates and available actions.
 
-![Notes Page](./screenshots/notes.png)
+![Notes Page](./screenshots/notes-page-section.png)
 
 ---
 
@@ -117,7 +117,7 @@ The Notes page displays all saved notes along with their creation dates and avai
 
 Users can open an individual note to view its complete title and content separately.
 
-![Single Note View](./screenshots/single-note.png)
+![Single Note View](./screenshots/single-note-view.png)
 
 ---
 
@@ -125,15 +125,15 @@ Users can open an individual note to view its complete title and content separat
 
 Users can search for specific notes using the search bar.
 
-![Search Notes](./screenshots/search.png)
+![Search Notes](./screenshots/search-note.png)
 
 ---
 
 ### 🔗 Share Note
 
-The sharing feature allows users to share a note using available sharing options on their device.
+The sharing feature allows users to share a note using the available sharing options on their device.
 
-![Share Note](./screenshots/share.png)
+![Share Note](./screenshots/share-note.png)
 
 ---
 
@@ -142,6 +142,7 @@ The sharing feature allows users to share a note using available sharing options
 A toast notification provides confirmation when a note has been created successfully.
 
 ![Create Note Notification](./screenshots/create-note.png)
+
 
 ---
 
