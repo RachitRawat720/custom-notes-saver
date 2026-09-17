@@ -4,7 +4,7 @@ A modern and user-friendly **Notes Management Web Application** built with **Rea
 
 Custom Notes Saver allows users to create, manage, search, edit, view, copy, share, and delete their notes through a clean and responsive interface.
 
-🔗 **Live Demo:** [Custom Notes Saver](https://RachitRawat720.github.io/custom-notes-saver/)
+🔗 **Live Demo:** [Custom Notes Saver](custom-notes-saver-hqg3cg3k8-rachit-singh-rawat.vercel.app)
 
 ---
 
@@ -91,7 +91,7 @@ Separate Home and Notes sections make it easy to navigate through the applicatio
 * **Font Awesome** – Icons
 * **ESLint** – Code quality and linting
 * **Git & GitHub** – Version control
-* **GitHub Pages** – Deployment
+* **Vercel** – Deployment
 
 ---
 
@@ -204,13 +204,14 @@ npm run preview
 
 ## 🚀 Deployment
 
-This project is deployed using **GitHub Pages**.
+This project is deployed using Vercel.
 
-To deploy the application:
+### Production Build
+
+To create an optimized production build:
 
 ```bash
-npm run deploy
-```
+npm run build
 
 The live application is available at:
 
@@ -292,7 +293,7 @@ While building Custom Notes Saver, I gained practical experience in:
 * Organizing a frontend project
 * Implementing note management operations
 * Adding sharing functionality
-* Deploying a React application using GitHub Pages
+* Deploying a React application using Vercel
 * Debugging and improving frontend applications
 
 ---
@@ -327,11 +328,11 @@ The project focuses on creating a clean user experience while implementing featu
 
 ### Rachit Rawat
 
-**Frontend Developer | React.js Developer**
+**MERN Stack Developer**
 
 * GitHub: [@RachitRawat720](https://github.com/RachitRawat720)
 * Project Repository: [Custom Notes Saver](https://github.com/RachitRawat720/custom-notes-saver)
-* Live Demo: [Custom Notes Saver](https://RachitRawat720.github.io/custom-notes-saver/)
+* Live Demo: [Custom Notes Saver](https://custom-notes-saver-hqg3cg3k8-rachit-singh-rawat.vercel.app)
 
 ---
 
