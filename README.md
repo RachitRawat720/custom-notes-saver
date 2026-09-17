@@ -4,7 +4,7 @@ A modern and user-friendly **Notes Management Web Application** built with **Rea
 
 Custom Notes Saver allows users to create, manage, search, edit, view, copy, share, and delete their notes through a clean and responsive interface.
 
-🔗 **Live Demo:** [Custom Notes Saver](custom-notes-saver-hqg3cg3k8-rachit-singh-rawat.vercel.app)
+🔗 **Live Demo:** [Custom Notes Saver](https://custom-notes-saver.vercel.app/)
 
 ---
 
@@ -332,7 +332,7 @@ The project focuses on creating a clean user experience while implementing featu
 
 * GitHub: [@RachitRawat720](https://github.com/RachitRawat720)
 * Project Repository: [Custom Notes Saver](https://github.com/RachitRawat720/custom-notes-saver)
-* Live Demo: [Custom Notes Saver](https://custom-notes-saver-hqg3cg3k8-rachit-singh-rawat.vercel.app)
+* Live Demo: [Custom Notes Saver](https://custom-notes-saver.vercel.app/)
 
 ---
 
