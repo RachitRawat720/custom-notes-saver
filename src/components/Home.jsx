@@ -91,7 +91,7 @@ const Home = () => {
             <button onClick={() =>
                     window.scrollTo({ top: 0, behavior: "smooth",})
                 }
-                className='bg-blue-900 hover:bg-amber-200 rounded-4xl text-white mt-5 text-[14px] px-2 py-1 sm:mt-5 sm:text-[16px] sm:px-3 sm:py-1 md:mt-8 md:text-xl md:px-4 md:py-2 lg:mt-10 lg:text-2xl lg:px-6 lg:py-2 '>
+                className='bg-blue-900 hover:bg-amber-200 hover:text-black rounded-4xl text-white mt-5 text-[14px] px-2 py-1 sm:mt-5 sm:text-[16px] sm:px-3 sm:py-1 md:mt-8 md:text-xl md:px-4 md:py-2 lg:mt-10 lg:text-2xl lg:px-6 lg:py-2 '>
                 Go to top ↑
             </button>
         </div>

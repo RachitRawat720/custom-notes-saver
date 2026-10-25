@@ -154,7 +154,7 @@ const Notes = () => {
                                 behavior: "smooth",
                             })
                         }
-                        className="bg-blue-900 text-white text-[14px] px-2 py-1 md:text-[16px] md:px-3 md:py-2 lg:text-[18px] lg:px-5 lg:py-2 rounded-4xl hover:bg-amber-200 transition"
+                        className="bg-blue-900 text-white text-[14px] px-2 py-1 md:text-[16px] md:px-3 md:py-2 lg:text-[18px] lg:px-5 lg:py-2 rounded-4xl hover:bg-amber-200 hover:text-black transition"
                     >
                         ↑ Go to Top
                     </button>
