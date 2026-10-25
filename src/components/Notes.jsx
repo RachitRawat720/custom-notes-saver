@@ -139,7 +139,7 @@ const Notes = () => {
                     (
                         <div className="text-gray-700 font-medium text-xl sm:text-3xl md:text-4xl lg:text-5xl lg:mt-5">
                             "No note present" <br /><br />
-                            <div className="bg-amber-600 inline-block text-white rounded-3xl px-2 py-0.5 text-[12px] sm:px-3 sm:py-1 sm:text-[15px] md:py-1 md:px-3 md:text-xl lg:py-2 lg:px-4 lg:text-2xl hover:bg-blue-500"><NavLink to={"/"}>Add Note</NavLink></div>
+                            <div className="bg-blue-900 inline-block text-white rounded-3xl px-2 py-0.5 text-[12px] sm:px-3 sm:py-1 sm:text-[15px] md:py-1 md:px-3 md:text-xl lg:py-2 lg:px-4 lg:text-2xl hover:bg-amber-200 hover:text-black"><NavLink to={"/"}>Add Note</NavLink></div>
                         </div>
                     )
                 }
